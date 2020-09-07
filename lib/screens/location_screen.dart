@@ -32,7 +32,7 @@ class _LocationScreenState extends State<LocationScreen> {
       if (weatherData == null) {
         temperature = 0;
         weatherIcon = 'Error';
-        weatherMessage = 'Unable to get weather data.';
+        weatherMessage = 'Unable to get weather data';
         cityName = '';
         return;
       }
@@ -42,7 +42,7 @@ class _LocationScreenState extends State<LocationScreen> {
       cityName = weatherData['name'];
 
       weatherIcon = weatherModel.getWeatherIcon(condition);
-      weatherMessage = weatherModel.getMessage(temperature);
+      weatherMessage = weatherModel.getMessage(temperature) + ' in ';
     });
   }
 
@@ -118,7 +118,7 @@ class _LocationScreenState extends State<LocationScreen> {
               Padding(
                 padding: EdgeInsets.only(right: 15.0),
                 child: Text(
-                  "$weatherMessage in $cityName!",
+                  "$weatherMessage$cityName!",
                   textAlign: TextAlign.right,
                   style: kMessageTextStyle,
                 ),
