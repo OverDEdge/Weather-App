@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ios",
+    "\\ios\\Flutter",
+    "\\ios\\Runner.xcworkspace\\xcshareddata",
+    "\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset",
+    "\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset",
+    "\\ios\\Runner\\Base.lproj",
+    "\\lib"
+  ],
+  "SelectedNode": "\\lib\\main.dart",
+  "PreviewInSolutionExplorer": false
+}
